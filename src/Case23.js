@@ -16,7 +16,7 @@ export default class Case1 extends Component {
   handleFetch = () => {
     const { inputStart, inputEnd, inputMaxRoutes } = this.state
     axios
-      .post('http://localhost:9000/api/v1/delivery/possible', {
+      .post(`${process.env.REACT_APP_DELIVERY_API_ENDPOINT}delivery/possible`, {
         start: inputStart,
         end: inputEnd,
         maxRoutes: inputMaxRoutes,

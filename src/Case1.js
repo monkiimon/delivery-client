@@ -13,7 +13,7 @@ export default class Case1 extends Component {
 
   handleFetch = () => {
     axios
-      .post('http://localhost:9000/api/v1/delivery/cost', {
+      .post(`${process.env.REACT_APP_DELIVERY_API_ENDPOINT}delivery/cost`, {
         route: this.state.input,
       })
       .then(({ data: { cost } }) => {
