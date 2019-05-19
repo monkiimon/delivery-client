@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
-          <span className="navbar-brand">​ Delivery​ ​Service</span>
+          <span className="navbar-brand">​Delivery Service</span>
           <button
             className="navbar-toggler"
             type="button"
